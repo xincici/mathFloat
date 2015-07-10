@@ -29,6 +29,12 @@ function getTime(num){
     }
     return 1;
 }
+function singleMulti(a, b){
+    var timea = getTime(a),
+        timeb = getTime(b);
+    var result = ((a * timea) * (b * timeb)) / (timea * timeb);
+    return result;
+}
 
 var proto = {
     add: function(){
@@ -56,6 +62,25 @@ var proto = {
             }
         });
         return result/time;
+    },
+    multi: function(){
+        var args = arrayProto.slice.call(arguments);
+        if(!isNumber(args)){
+            throw new Error('Illegal arguments!');
+        }
+        var result = 1;
+        if(args.length === 1){
+            return args[0];
+        }else{
+            _.forEach(args, function(item, index){
+                if(index === 0){
+                    result = singleMulti(1, item);
+                }else{
+                    result = singleMulti(result, item);
+                }
+            });
+        }
+        return result;
     }
 };
 

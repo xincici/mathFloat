@@ -14,5 +14,13 @@ var arr = [0.1, 0.2, 0.3, 0.4];
 var sum_1 = mathFloat.add.apply(null, arr);
 ```
 
+## methods
+
+```javascript
+mathFloat.add()
+mathFloat.sub()
+mathFloat.multi()
+```
+
 ## LICENSE 
 MIT

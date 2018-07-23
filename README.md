@@ -1,3 +1,6 @@
+# WARNING!!!
+DO NOT USE THIS PACKAGE DUE TO IT IS INCOMPLETE AND INCORRECT
+
 # mathFloat
 Just a tool for float number calculation in javascript.
 

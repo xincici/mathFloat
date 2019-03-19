@@ -20,7 +20,5 @@
     "url": "https://github.com/xincici/mathFloat/issues"
   },
   "homepage": "https://github.com/xincici/mathFloat#readme",
-  "dependencies": {
-    "lodash": "^3.10.0"
-  }
+  "dependencies": {}
 }
